@@ -26,13 +26,12 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "whoops not a valid  username or password", Toast.LENGTH_LONG)
                     .show()
 
-            } else {
-                if (email.toString() == "toor@gmail.com" && password.toString() == "root") {
+            } else if (email.toString() == "toor@gmail.com" && password.toString() == "root") {
                     val intent = Intent(this, ListActivity::class.java)
                     startActivity(intent)
-                } else {
+             } else {
                     Toast.makeText(this, "Something went wrong", Toast.LENGTH_LONG).show()
-                }
+                
             }
         }
     }
