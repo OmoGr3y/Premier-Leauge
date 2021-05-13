@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
                     .show()
 
             }else {
-                    Toast.makeText(this, "Something went wrong" +email.text.toString(), Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Something went wrong" , Toast.LENGTH_LONG).show()
 
                 }
             }
