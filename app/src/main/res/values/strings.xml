@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Premier League Winners</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="shr_button_next">Sign In</string>
+
+
+
+
+</resources>

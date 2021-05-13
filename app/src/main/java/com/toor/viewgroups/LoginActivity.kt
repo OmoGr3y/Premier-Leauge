@@ -21,20 +21,23 @@ class LoginActivity : AppCompatActivity() {
 
         val signInButton = findViewById<MaterialButton>(R.id.signInButton)
 
+        println(email.toString())
+        println(password.toString())
+
         signInButton.setOnClickListener() {
-            if (email.toString().isNullOrEmpty() || password.toString().isNullOrEmpty()) {
+            if (email.text.toString() == "toor@gmail.com" && password.text.toString() =="root") {
+                    val intent = Intent(this, ListActivity::class.java)
+                    startActivity(intent)
+            } else  if (email.text.toString().isEmpty() || password.text.toString().isEmpty()) {
                 Toast.makeText(this, "whoops not a valid  username or password", Toast.LENGTH_LONG)
                     .show()
 
-            } else {
-                if (email.toString() == "toor@gmail.com" && password.toString() == "root") {
-                    val intent = Intent(this, ListActivity::class.java)
-                    startActivity(intent)
-                } else {
-                    Toast.makeText(this, "Something went wrong", Toast.LENGTH_LONG).show()
+            }else {
+                    Toast.makeText(this, "Something went wrong" +email.text.toString(), Toast.LENGTH_LONG).show()
+
                 }
             }
-        }
+
     }
 }
 
