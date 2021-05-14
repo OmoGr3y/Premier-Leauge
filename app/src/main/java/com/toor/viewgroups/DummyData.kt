@@ -29,7 +29,7 @@ object DummyData {
         LeagueTable(
             "Blackburn Rovers",
             R.drawable.fc_blackburn,
-            "Won the English Premier League 1 time "
+            "Won the English Premier League Once "
 
         ),
         LeagueTable(
